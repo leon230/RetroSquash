@@ -108,7 +108,7 @@ public class MainActivity extends Activity {
         racketPosition.x = screenWidth / 2;
         racketPosition.y = screenHeight - 20;
         racketWidth = screenWidth / 8;
-        racketHeight = 10;
+        racketHeight = 20;
 
         ballWidth = screenWidth / 35;
         ballPosition = new Point();
@@ -149,8 +149,6 @@ public class MainActivity extends Activity {
                     ballIsMovingRight = false;
                     break;
             }
-
-
         }
 
         @Override
@@ -159,11 +157,9 @@ public class MainActivity extends Activity {
                 updateCourt();
                 drawCourt();
                 controlFPS();
-
             }
 
         }
-
 
         public void updateCourt() {
             if (racketIsMovingRight) {
